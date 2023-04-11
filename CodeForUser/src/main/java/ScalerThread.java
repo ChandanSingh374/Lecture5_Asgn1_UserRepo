@@ -11,7 +11,7 @@ public class ScalerThread extends Thread {
     }
 
     @Override
-    public synchronized void start() {
+    public void start() {
         super.start();
         map.put(target, this.getName());
     }
